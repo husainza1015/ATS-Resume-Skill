@@ -1,0 +1,78 @@
+# Example RenderCV input for the ats-resume skill.
+# Fictional content — replace everything with the user's real details.
+# Render with:  bash ../scripts/build_cv.sh example.yaml "Jordan_Avery_Resume"
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Jordan Avery
+  headline: Senior Software Engineer — Distributed Systems
+  location: Austin, TX
+  email: jordan.avery@example.com
+  phone: +1-512-555-0142
+  custom_connections:
+    - fontawesome_icon: fa-brands fa-linkedin
+      placeholder: LinkedIn
+      url: https://www.linkedin.com/in/example/
+    - fontawesome_icon: fa-brands fa-github
+      placeholder: GitHub
+      url: https://github.com/example
+  sections:
+    summary:
+      - Software engineer with 8+ years building reliable, high-throughput backend systems. Led teams of 4-6, shipped services handling millions of daily requests, and reduced infrastructure cost while improving latency. Strengths in distributed systems, observability, and pragmatic delivery.
+    experience:
+      - company: Northwind Cloud
+        position: Senior Software Engineer
+        location: Austin, TX
+        start_date: 2021-04
+        end_date: present
+        highlights:
+          - Designed and shipped an event-streaming platform serving 4M+ requests/day at 99.98% availability.
+          - Cut p99 API latency 43% by introducing async batching and a read-through cache.
+          - Mentored 5 engineers; established the team's on-call and incident-review practices.
+      - company: Lumen Data
+        position: Software Engineer
+        location: Remote
+        start_date: 2017-06
+        end_date: 2021-03
+        highlights:
+          - Built the ingestion pipeline (Python, Kafka) that became the backbone of 3 customer-facing products.
+          - Reduced monthly cloud spend 28% by right-sizing compute and adding autoscaling.
+    education:
+      - institution: University of Texas at Austin
+        area: Computer Science
+        degree: BS
+        location: Austin, TX
+        start_date: 2013
+        end_date: 2017
+    skills:
+      - label: Languages
+        details: Python, Go, TypeScript, SQL
+      - label: Infrastructure
+        details: Kubernetes, Kafka, PostgreSQL, AWS, Terraform
+      - label: Practices
+        details: Distributed systems, observability, CI/CD, incident response
+    projects:
+      - name: openobserve
+        date: '2023'
+        summary: Open-source latency dashboard for streaming pipelines
+        highlights:
+          - 1,200+ GitHub stars; adopted by 3 companies in production.
+design:
+  theme: engineeringresumes
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+  links:
+    underline: true
+    show_external_link_icon: false
+  section_titles:
+    type: with_full_line
+locale:
+  language: english
+settings:
+  current_date: today
+  bold_keywords: []
+  pdf_title: Jordan Avery - Resume

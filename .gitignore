@@ -1,0 +1,17 @@
+# RenderCV build output (regenerated on each render)
+rendercv_output/
+
+# Generated resume PDFs (build artifacts; keep the YAML as source of truth)
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
